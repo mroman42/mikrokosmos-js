@@ -4,7 +4,7 @@ CodeMirror.defineSimpleMode("mikrokosmos", {
 	// Comments
 	{regex: /\#.*/, token: "comment"},
 	// Interpreter
-	{regex: /\:verbose|\:ski|\:types|\:color/, token: "atom"},
+	{regex: /\:verbose|\:ski|\:types/, token: "atom"},
 
 	// Binding
 	{regex: /(.*?)(\s*)(=)(\s*)(.*?)$/,
@@ -28,3 +28,27 @@ CodeMirror.defineSimpleMode("mikrokosmos", {
     }
 });
 
+
+CodeMirror.defineSimpleMode("mikrokosmosoutput", {
+    start: [
+	// Error
+	{regex: /Error:(.*?)$/, token: "keyword"},
+
+	// Command
+	{regex: /types: (on|off)$/, token: "variable-3"},
+	{regex: /verbose: (on|off)$/, token: "variable-3"},
+	{regex: /ski: (on|off)$/, token: "variable-3"},
+	
+	// Expression
+	{regex: /(.*?)(⇒.*?)(\:\:.*?)$/g,
+	 token: ["def","number","variable-2"]},
+	{regex: /(.*?)(⇒.*?)$/g,
+	 token: ["def","number"]},
+	{regex: /(.*?)(⇒.*?)$/g,
+	 token: ["def","number"]},
+    ],
+    meta: {
+	dontIndentStates: ["comment"],
+	lineComment: "#"
+    }
+});
