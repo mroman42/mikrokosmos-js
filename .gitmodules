@@ -1,0 +1,3 @@
+[submodule "mikrokosmos"]
+	path = mikrokosmos
+	url = https://github.com/M42/mikrokosmos.git
