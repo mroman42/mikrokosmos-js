@@ -13,6 +13,7 @@
 
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/codemirror.min.js"></script>
 #+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/codemirror.css">
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/addon/mode/simple.min.js"></script>
 #+HTML_HEAD: <script src="codemirrormkr.js"></script>
 #+HTML_HEAD: <link rel="stylesheet" href="styles/mikrocode.css">
 
