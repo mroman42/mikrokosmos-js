@@ -8,45 +8,54 @@ import Data.JSString (JSString, pack)
 import GHCJS.Types (JSVal, jsval)
 import JavaScript.Object (create, setProp)
 
--- "sayHello" test:
--- Assigns a haskell callback, sayHello, to a javascript function.
--- The "js_sayHello" function is callable from javascript.
-
-foreign import javascript unsafe "js_sayHello = $1"
-    set_sayHelloCallback :: Callback a -> IO ()
-
-foreign import javascript unsafe "js_sayHello($1)" 
-    test_sayHelloCallback :: JSString -> IO ()
-
-sayHelloTest = do
-    let sayHello jv = do
-            Just str <- fromJSVal jv
-            print $ "(say): hello, " ++ str  -- prints to console
-
-    sayHelloCallback <- syncCallback1 ContinueAsync sayHello
-    set_sayHelloCallback sayHelloCallback
-    test_sayHelloCallback $ pack "world"  
+import Lambda
+import Interpreter
+import Environment
+import Format
+import Control.Monad.State
+import Data.Maybe
+import Data.List
+import Text.ParserCombinators.Parsec
 
 
--- "getHello" test:
--- Assigns a haskell callback, getHello,  to a javascript function.
--- The getHello function constructs a javascript object and
--- returns it to the javascript caller.  The "js_getHello" function
--- is callable from javascript.
+-- Calling Mikrokosmos from Javascript
+foreign import javascript unsafe "mikrokosmos = $1"
+    set_mikrokosmos :: Callback a -> IO ()
 
-foreign import javascript unsafe "js_getHello = $1"
-    set_getHelloCallback :: Callback a -> IO ()
-
-getHelloTest = do
+mikroCall = do
     let getHello jv = do
             Just str <- fromJSVal jv
             o <- create
-            setProp "helloworld" (jsval $ pack $ "(get): hello, " ++ str) o
-            return $ jsval o -- accessible from javascript caller.
+            setProp "mkroutput" (jsval $ pack $ mikro str) o
+            return $ jsval o
 
-    getHelloCallback <- syncCallback1' getHello
-    set_getHelloCallback getHelloCallback
+    getMikroCallback <- syncCallback1' getHello
+    set_mikrokosmos getMikroCallback
 
 main = do
-    sayHelloTest
-    getHelloTest
+    mikroCall
+
+
+
+mikro :: String -> String
+mikro = format . execute
+
+execute :: String -> String
+execute code = do
+  let parsing = map (parse actionParser "") $ filter (/="") $ lines code
+  let actions = catMaybes $ map (\x -> case x of
+                             Left _  -> Nothing
+                             Right a -> Just a) parsing
+  case runState (multipleAct actions) defaultEnv of
+    (outputs, _) -> unlines outputs
+
+removeString :: String -> String -> String
+removeString _ "" = ""
+removeString t s@(c:sc)
+  | t `isPrefixOf` s = removeString t (drop (length t) s)
+  | otherwise = c : removeString t sc
+
+format :: String -> String
+format = cleanlines . decolor
+  where
+    cleanlines = unlines . filter (/="") . lines
