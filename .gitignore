@@ -1,3 +1,8 @@
 /.stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/autogen/Paths_mikrokosmosjs.hs
 /.stack-work/dist/x86_64-linux/Cabal-1.24.0.0_ghcjs/build/autogen/Paths_reflex_starter.hs
 *stack-work*
+/docs/index.bbl
+/docs/index.pdf
+/docs/index.tex
+/docs/ltximg/org-ltximg_9cdf804b5d473429b0dfc615a875b39f362068ef.png
+/docs/ltximg/org-ltximg_fcd6f5cc898e0c40c85f679654671a3d308d2a1d.png
