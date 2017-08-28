@@ -1,5 +1,5 @@
 # mikrokosmos-js
-Call mikrokosmos from Javascript.
+Call [Mikrokosmos](https://github.com/M42/mikrokosmos) from Javascript.
 
 ## How to embed Mikrokosmos on a web page
 You need the following code on your header
