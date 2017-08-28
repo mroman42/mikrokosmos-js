@@ -1,7 +1,7 @@
 # -*- mode: org; -*-
 
 #+OPTIONS: H:7 broken-links:nil
-#+HTML_MATHJAX: path:"//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"
+#+HTML_MATHJAX: path:"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/readtheorg/css/readtheorg.css"/>

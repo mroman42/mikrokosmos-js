@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-08-28 Mon 01:42 -->
+<!-- 2017-08-28 Mon 02:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mikrokosmos-JS</title>
@@ -241,6 +241,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -252,13 +274,21 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org559e468">1. Testing Mikrokosmos-js</a></li>
+<li><a href="#orgd51a02a">1. Testing Mikrokosmos-js</a></li>
+<li><a href="#org023c741">2. Boolean logic</a>
+<ul>
+<li><a href="#org87d051b">2.1. Booleans</a></li>
+<li><a href="#org8e8b764">2.2. If-else</a></li>
+<li><a href="#org5dee64b">2.3. Logic gates</a></li>
+<li><a href="#orgdb8d0e9">2.4. Exercises and more logical gates</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org559e468" class="outline-2">
-<h2 id="org559e468"><span class="section-number-2">1</span> Testing Mikrokosmos-js</h2>
+<div id="outline-container-orgd51a02a" class="outline-2">
+<h2 id="orgd51a02a"><span class="section-number-2">1</span> Testing Mikrokosmos-js</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This is a test for MikrokosmosJS.
@@ -287,10 +317,245 @@ fst</script>
 </div>
 </div>
 </div>
+
+<div id="outline-container-org023c741" class="outline-2">
+<h2 id="org023c741"><span class="section-number-2">2</span> Boolean logic</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-org87d051b" class="outline-3">
+<h3 id="org87d051b"><span class="section-number-3">2.1</span> Booleans</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+<a href="https://en.wikipedia.org/wiki/Boolean_algebra">Boolean logic</a> can be encoded in &lambda;-calculus. In boolean logic, we
+have two elements <code>true</code> and <code>false</code>; and some logical gates such as
+</p>
+
+<ul class="org-ul">
+<li>the <b>and</b> gate, which outputs true if and only if its two inputs 
+are true.</li>
+<li>the <b>or</b> gate, which outputs true if any of its inputs is true,
+or even if <i>both</i> are true.</li>
+<li>the <b>not</b> gate, which outpus true if and only if its input is
+false.</li>
+</ul>
+
+<p>
+For example,
+</p>
+
+<p>
+\[
+\mathtt{not(\ or ( true, false )\ ) = not\ true = false}.
+\]
+</p>
+
+<p>
+Our intuition on what means to be a truth value is that it can
+distinghish between two values (<b>true</b> or <b>false</b>) or two branches on
+a program <code>(if ... else ...)</code>. We are going to use this intuition to
+write an encoding of boolean values based on their ability to choose
+between two branches. Maybe surprisingly, this encoding will be also
+useful to write the usual boolean logic gates.
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+# Church encoding of boolean truth values
+true  = \a.\b.a
+false = \a.\b.b
+true
+false</script>
+</div>
+
+<p>
+Here, a truth value is a function on two elements that chooses one of them.
+</p>
+
+<ul class="org-ul">
+<li>\(\mathtt{true}\ a\ b  = a\)</li>
+<li>\(\mathtt{false}\ a\ b = b\)</li>
+</ul>
+
+<p>
+This is called the <b>Church encoding</b> of the booleans, as it was
+firstly used by Alonzo Church. This idea of defining a type based not
+on its content but on how it can be used will appear later, when we
+define more complex data structures.
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+true id const
+false id const
+true true false
+false true false</script>
+</div>
+
+<p>
+In particular, <code>true</code> is exactly the same lambda term as <code>const</code>. This
+is a very usual phenomenon in lambda calculus, where the same function
+can be interpreted differently in different contexts. Mikrokosmos
+allows us to have multiple names for the same term.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8e8b764" class="outline-3">
+<h3 id="org8e8b764"><span class="section-number-3">2.2</span> If-else</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+The advantage of this way of encoding the boolean values is that they
+can be easily used in combination with other lambda terms. In
+particular, the way to encode an if-else is almost trivial: it is
+already encoded on the lambda terms!
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+# If true, then the id function will be returned
+# if false, then the const function will be returned 
+(\b. b id const) true
+(\b. b id const) false</script>
+</div>
+
+<p>
+If you really want to write an <code>if-else</code> function, it will be, quite
+literally, the trivial one
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+ifelse = \b.b
+(ifelse true) id const
+(ifelse false) id const</script>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5dee64b" class="outline-3">
+<h3 id="org5dee64b"><span class="section-number-3">2.3</span> Logic gates</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Usual operations on booleans can be defined too on this encoding and
+they will be surprisingly easy if we think of booleans as functions
+choosing from two terms.
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+# The and gate takes two booleans and returns a true if and only if 
+# the two given booleans are true. 
+and = \p.\q.p q p
+# Checking the truth table for the "and" gate
+and true true
+and true false
+and false true
+and false false</script>
+</div>
+
+<p>
+<b>Exercise 2.1:</b> Think why this definition of the `and` gate works.
+<i>Hint: think what happens when the first argument is a <code>true</code>.</i>
+<i>What happens if it is a <code>false</code>?</i>
+</p>
+
+<p>
+The <code>or</code> gate can be defined in a similar way.
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+# The or gate takes two booleans and returns a true if and only if
+# any of them (or both) are true
+or = \p.\q.p p q
+# Checking the truth table for the "or" gate
+or true true
+or true false
+or false true
+or false false</script>
+</div>
+
+<p>
+And finally, the negation operator is only a way of interchanging the two truth values
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+not = \b.b false true
+# Truth table for the "not" gate
+not true
+not false
+not (and true true)</script>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdb8d0e9" class="outline-3">
+<h3 id="orgdb8d0e9"><span class="section-number-3">2.4</span> Exercises and more logical gates</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+The boolean logic implication operator works also as a boolean gate, it can be defined as
+</p>
+
+<p>
+\[(a \to b) \equiv (\neg a) \vee b,\]
+</p>
+
+<p>
+that is, the implication is true if both are true or if the premise is false.
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+implies = \a.\b.or (not a) b
+implies true true
+implies true false
+implies false true
+implies false false</script>
+</div>
+
+<p>
+<b>Exercise 2.2:</b> Compute the logic table for the implication using the
+ previous definition.
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+# -- Your solution goes here</script>
+</div>
+
+<p>
+<b>Exercise 2.3:</b> Compute the following logic clauses using lambda calculus
+</p>
+
+<ul class="org-ul">
+<li>True or false implies false.</li>
+<li>False implies that: false implies false.</li>
+<li>The negation of false and the negation of true both imply true.</li>
+</ul>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+# -- Your solution goes here</script>
+</div>
+
+<p>
+<b>Exercise 2.4:</b> Define the `xor` gate as a lambda term. The `xor` of
+two boolean values must return a true if and only if <b>exactly one</b> of
+them are true. Check also its logic table.
+<i>Hint: you may want to use the already defined `not`.</i>
+</p>
+
+<div class="mikrojs-console">
+<script type="text/mikrokosmos">
+# -- Your solution goes here</script>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Mario Román</p>
-<p class="date">Created: 2017-08-28 Mon 01:42</p>
+<p class="date">Created: 2017-08-28 Mon 02:22</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -11,7 +11,7 @@ CodeMirror.defineSimpleMode("mikrokosmos", {
 	 token: ["def",null,"operator",null,"variable"]},
 	// Operators
 	{regex: /[=!]+/, token: "atom"},
-	{regex: /(?:id|const|compose|true|false|and|or|not|ifelse|succ|plus|mult|pred|minus|iszero|leq|eq)\b/,
+	{regex: /(?:id|const|compose|true|false|and|or|not|implies|ifelse|succ|plus|mult|pred|minus|iszero|leq|eq)\b/,
 	 token: "keyword"},
 	{regex: /(?:fst|snd|inl|inr|caseof|unit|abort|absurd)\b/,
 	 token: "keyword"},
