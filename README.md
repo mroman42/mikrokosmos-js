@@ -1,5 +1,5 @@
 # mikrokosmos-js
-Call [Mikrokosmos](https://github.com/M42/mikrokosmos) from Javascript.
+Call [Mikrokosmos](https://github.com/M42/mikrokosmos) from Javascript. 
 
 ## How to embed Mikrokosmos on a web page
 You need the following code on your header
@@ -39,6 +39,7 @@ pre {
 </style>
 ~~~
 
+The `mikrokosmos` JS function will be then available.
 Then, you can write Mikrokosmos code pads on your document as
 
 ~~~ html
