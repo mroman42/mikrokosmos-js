@@ -46,6 +46,8 @@ CodeMirror.defineSimpleMode("mikrokosmosoutput", {
 	 token: ["def","number"]},
 	{regex: /(.*?)(⇒.*?)$/g,
 	 token: ["def","number"]},
+	{regex: /(.*?)(\:\:.*?)$/g,
+	 token: ["def","variable-2"]},
     ],
     meta: {
 	dontIndentStates: ["comment"],
