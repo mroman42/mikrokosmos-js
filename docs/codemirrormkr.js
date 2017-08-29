@@ -48,7 +48,7 @@ CodeMirror.defineSimpleMode("mikrokosmosoutput", {
 	 token: ["def","number"]},
 	{regex: /(.*?)(\:\:.*?)$/g,
 	 token: ["def","variable-3"]},
-	{regex: /λ(.*?)$/,
+	{regex: /λ[^\)](.*?)$/,
 	 token: ["def"]},
 	
 	// Deduction
