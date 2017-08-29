@@ -11,7 +11,7 @@ CodeMirror.defineSimpleMode("mikrokosmos", {
 	 token: ["def",null,"operator",null,"variable"]},
 	// Operators
 	{regex: /[=!]+/, token: "atom"},
-	{regex: /(?:id|const|compose|true|false|and|or|not|implies|ifelse|succ|plus|mult|pred|minus|iszero|leq|eq)\b/,
+	{regex: /(id|const|compose|true|false|and|or|not|implies|ifelse|succ|plus|mult|pred|minus|iszero|leq|eq|S|K|I|C|B|W|Y|tuple|first|second|cons|nil|sum|prod|length|foldr|map|filter|node|omega|fix|fact|fib|pair)\b/,
 	 token: "keyword"},
 	{regex: /(?:fst|snd|inl|inr|caseof|unit|abort|absurd)\b/,
 	 token: "keyword"},
@@ -37,17 +37,21 @@ CodeMirror.defineSimpleMode("mikrokosmosoutput", {
 	// Command
 	{regex: /types: (on|off)$/, token: "variable-3"},
 	{regex: /verbose: (on|off)$/, token: "variable-3"},
-	{regex: /ski: (on|off)$/, token: "variable-3"},
+	{regex: /ski mode: (on|off)$/, token: "variable-3"},
 	
 	// Expression
 	{regex: /(.*?)(⇒.*?)(\:\:.*?)$/g,
-	 token: ["def","number","variable-2"]},
+	 token: ["def","number","variable-3"]},
 	{regex: /(.*?)(⇒.*?)$/g,
 	 token: ["def","number"]},
 	{regex: /(.*?)(⇒.*?)$/g,
 	 token: ["def","number"]},
 	{regex: /(.*?)(\:\:.*?)$/g,
 	 token: ["def","variable-2"]},
+
+	// Deduction
+	{regex: /(.*?)(∷)(.*?)(\ \ \ )/g,
+	 token: ["def","variable-3","variable-3",null]},
     ],
     meta: {
 	dontIndentStates: ["comment"],
