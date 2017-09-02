@@ -23,13 +23,13 @@ foreign import javascript unsafe "mikrokosmos = $1"
     set_mikrokosmos :: Callback a -> IO ()
 
 mikroCall = do
-    let getHello jv = do
+    let getMikro jv = do
             Just str <- fromJSVal jv
             o <- create
             setProp "mkroutput" (jsval $ pack $ mikro str) o
             return $ jsval o
 
-    getMikroCallback <- syncCallback1' getHello
+    getMikroCallback <- syncCallback1' getMikro
     set_mikrokosmos getMikroCallback
 
 main = do
