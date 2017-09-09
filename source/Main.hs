@@ -37,26 +37,13 @@ main = do
     mikroCall
 
 
-
 mikro :: String -> String
 mikro = format . execute
 
 execute :: String -> String
 execute = fst . executeWithEnv librariesEnv
 
-executeWithEnv :: Environment -> String -> (String, Environment)
-executeWithEnv initEnv code = do
-  let parsing = map (parse actionParser "") $ filter (/="") $ lines code
-  let actions = catMaybes $ map (\x -> case x of
-                             Left _  -> Nothing
-                             Right a -> Just a) parsing
-  case runState (multipleAct actions) initEnv of
-    (outputs, env) -> (unlines outputs, env)
-
 format :: String -> String
 format = cleanlines . decolor
   where
     cleanlines = unlines . filter (/="") . lines
-
-librariesEnv :: Environment
-librariesEnv = snd $ executeWithEnv defaultEnv stdlibraries
