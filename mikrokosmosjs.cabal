@@ -45,9 +45,11 @@ executable mikrojs
                  Interpreter
                  Environment
                  Ski
-                 Types
+                 Stlc.Types
                  Main
-                 Gentzen
+                 Stlc.Gentzen
+                 Stlc.Block
+                 Libraries
   
 source-repository head
   type:     git
