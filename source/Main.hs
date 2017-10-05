@@ -17,7 +17,7 @@ import Data.Maybe
 import Data.List
 import Libraries
 import Text.ParserCombinators.Parsec
-
+ 
 
 -- Calling Mikrokosmos from Javascript
 foreign import javascript unsafe "mikrokosmos = $1"

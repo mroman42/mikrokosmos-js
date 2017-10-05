@@ -1363,9 +1363,12 @@ var h$ret10;
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 /* platform-specific setup */
 // top-level debug initialization needs this. declare it in case we aren't in the same file as out.js
@@ -1468,9 +1471,12 @@ function h$getGlobal(that) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 /*
   set up the google closure library. this is a rather hacky setup
@@ -1551,9 +1557,12 @@ goog.crypt = {};
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 /*
  Copyright (c) 2010, Linden Research, Inc.
@@ -2482,9 +2491,12 @@ goog.crypt = {};
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 (function (global, undefined) {
     "use strict";
@@ -2671,9 +2683,12 @@ goog.crypt = {};
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // Copyright 2009 The Closure Library Authors. All Rights Reserved.
 //
@@ -3373,9 +3388,12 @@ goog.math.Long.prototype.shiftRightUnsigned = function(numBits) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 /*
   simple set with reasonably fast iteration though an array, which may contain nulls
@@ -3807,9 +3825,12 @@ h$HeapSet.prototype._upHeap = function(i) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -4994,9 +5015,12 @@ function h$munmap(addr_d, addr_o, size) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 /*
   Do garbage collection where the JavaScript GC doesn't suffice or needs some help:
@@ -5545,9 +5569,12 @@ function h$finalizeCAFs() {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -5893,9 +5920,12 @@ function h$handleErrnoC(err, r_err, r_success, c) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 function h$MD5Init(ctx, ctx_off) {
   if(!ctx.arr) { ctx.arr = []; }
@@ -5943,9 +5973,12 @@ var h$__hsbase_MD5Final = h$MD5Final;
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -6482,9 +6515,12 @@ function h$ctz64(x1,x2) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // Unicode tables generated by ghcjs/utils/genUnicode.hs
 var h$printRanges = "f|!-f=|/q'/+1$J|(mo'1q&')| 63Y--EO'|$9| ('| ?'|!9?| ?-| %'AZ'| JI| +|#U2'''O0$)+'5'''+3*','O-).+''O0&&&'$-+''))0+$1C9)4(N0&,'7(('@+';A)2'''O0&,'5''')3'+','G7'.))*)'$&)')));+-))*'.>M-+2(PB)3(*1'&/+'733(2(P6,'5(*1'1$+'7&?)2(u'3(,32+'C)1''F)S4$'1)*/$2/7');| =+^n'$''$'.+0( #''<('-$.'7'+d| Yk+rk@<n|$G$-&|(E*'1$*'v*'f*'1$*'A| :*'| O'd)W/| t9|.r)|! 1=09Q5K;=(&;|!+'7/7/?'7/| z3z-| U7b:+;+(x'-9|  +W/9)| E'| K]'9/7/?'A| K| b+| #)|!W3| A)A)| /| I33r&/|%M/|&;'/'p'/'3 $a'| 3@>'/H')48-S1| +C''Y<)`GfA|#)/|-h-rU9M|H;'d'h);2| %| '| &|#<-| #$-&| 91'?S510000000|!4| CW| {;|$hW;+| I| u'|!=-v)|!+y-l;| '|$y} ^y7}%0j| /|9t)| 75|'fK|!+| {3|#3_''| S| 3+7/| 93| S5;/[+| r9`)| f8+f| 65?'7'|!=S[7/'/'/510| (+'|!#| %'7/}!e;;Q+| +}!'n|(/'|!Cp1;--W,$&&|!gE|(-C| I'| 5t?'W/?'jH*+-|#!+|$7)/'/'/'))10='';VH&@'?h|!f-)+| #)| v);+| &| %|!t^)| +A[+l;Y-z-`m+?x|#Q'7| vt3| 19|#4|&v5O73|#E/'$|  &)&Q| X35| j[)Y-| H| 9/'| I+&-3(X+)+5351| Idr+;5| 5)^'Y-W1+;1| j| [|+tb|(U| f+`A| E*?U17/| 3>;r5| [+&9/K9Gy|!S| ?-71)2'''O0&,'5''')5,1'1)-|%x| Y37|#b| 5'G| 5| S97p| 937|*K| p;|)y| ;|<Y|4M|!=|!M,|b`|7l}#8j|,^1b6+'|!/`'/7| U770L-I|3U| S9| 'CE}$&7'|e7|!E-=)517'+} 47|%M7r'| ^3|!5h| U|$/| x5G|#1| t| V&'&''+:$0| J*'30Z*,$)1|'T'|&O'| -}  %|$E'C|=C+X&$'$7* #/* $)&$' &'$'+0**$6D-),D| 1'|&#|  +|!7;A'A@m7=)b| @+z| `^=z-51'|#r| #)| f'| h-l3|%`| _-xu|#P'|#+C=)+;|!W;| tz;+| 937/t3`|I^}*Q/v} !59|$x}$#I|,'|G1|%A";
@@ -6524,9 +6560,12 @@ var h$catMapping = "d;P)3J)3 !/0 !34 !3.'37*'3)4'3W! !/3 !06 !-6W# !/4 !04f; !83
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -7165,9 +7204,12 @@ function h$throwJSException(e) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -7424,9 +7466,12 @@ var h$__hscore_localtime_r = h$localtime_r;
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // some Enum conversion things
 // an array of generic enums
@@ -7484,9 +7529,12 @@ function h$dataTag(e) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // weak reference support
 // values defined in Gen2.ClosureInfo
@@ -7608,9 +7656,12 @@ function h$finalizeWeak(w) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -8784,9 +8835,12 @@ function h$rs() {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // software transactional memory
 var h$stmTransactionActive = 0;
@@ -9092,9 +9146,12 @@ function h$stmCommitInvariant(localInv) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -9194,9 +9251,12 @@ function h$hs_spt_lookup_key(key1,key2,key3,key4) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -19913,9 +19973,12 @@ h$o(h$lazy_e, 0, 0, 0, 256, null);
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 function h$hsprimitive_memcpy(dst_d, dst_o, doff, src_d, src_o, soff, len) {
   return h$primitive_memmove(dst_d, dst_o, doff, src_d, src_o, len);
@@ -19993,9 +20056,12 @@ function h$hsprimitive_memset_Ptr(p_d, p_o, off, n, x_1, x_2) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // Copyright 2011 The Closure Library Authors. All Rights Reserved.
 //
@@ -20084,9 +20150,12 @@ goog.crypt.Hash.prototype.digest = goog.abstractMethod;
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // Copyright 2011 The Closure Library Authors. All Rights Reserved.
 //
@@ -20516,9 +20585,12 @@ goog.crypt.Md5.prototype.digest = function() {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 /* include/HsBaseConfig.h.  Generated from HsBaseConfig.h.in by configure.  */
 /* include/HsBaseConfig.h.in.  Generated from configure.ac by autoheader.  */
@@ -21341,9 +21413,12 @@ function h$rand() {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -21588,9 +21663,12 @@ function h$_hs_text_encode_utf8(destp_v, destp_o, src_v, srcoff, srclen) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -21892,9 +21970,12 @@ function h$_hs_bytestring_long_long_uint_hex(x_a, x_b, buf_d, buf_o) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 function h$get_current_timezone_seconds(t, pdst_v, pdst_o, pname_v, pname_o) {
     var d = new Date(t * 1000);
@@ -21952,9 +22033,12 @@ function h$clock_gettime(when, p_d, p_o) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 /* FNV-1 hash
  *
@@ -22012,9 +22096,12 @@ function h$hashable_getRandomBytes(dest_d, dest_o, len) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -22173,9 +22260,12 @@ function h$buildObjectFromTupList(xs) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 /*
    GHCJS bignum library for integer-gmp package
@@ -24032,9 +24122,12 @@ function h$ghcjsbn_encodeDouble_s(m, e) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -24144,9 +24237,12 @@ function h$closeWebSocket(status, reason, ws) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -24237,9 +24333,12 @@ function h$listToArrayWrap(xs) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 function h$animationFrameCancel(h) {
     if(h.handle) window.cancelAnimationFrame(h.handle);
@@ -24287,9 +24386,12 @@ function h$animationFrameRequest(h) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 function h$exportValue(fp1a,fp1b,fp2a,fp2b,o) {
   var e = { fp1a: fp1a
@@ -24344,9 +24446,12 @@ function h$releaseExport(e) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -25366,9 +25471,12 @@ function h$jsstringSplitRE(limit, re, str) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -25441,9 +25549,12 @@ function h$jsstringRawSplitAt(k, x) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 function h$foreignListProps(o) {
     var r = HS_NIL;
@@ -25482,9 +25593,12 @@ function h$foreignListProps(o) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // conversion between JavaScript string and Data.Text
 // values defined in Gen2.ClosureInfo
@@ -25587,9 +25701,12 @@ function h$safeTextFromString(x) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 // values defined in Gen2.ClosureInfo
 // thread status
@@ -25724,9 +25841,12 @@ function h$jsonTypeOf(o) {
    whether the overall intent is to support these features; otherwise,
    presume an older compiler has intent to support these features and
    define these macros by default.  */
-/* wchar_t uses Unicode 8.0.0.  Version 8.0 of the Unicode Standard is
-   synchronized with ISO/IEC 10646:2014, plus Amendment 1 (published
-   2015-05-15).  */
+/* wchar_t uses Unicode 10.0.0.  Version 10.0 of the Unicode Standard is
+   synchronized with ISO/IEC 10646:2017, fifth edition, plus
+   the following additions from Amendment 1 to the fifth edition:
+   - 56 emoji characters
+   - 285 hentaigana
+   - 3 additional Zanabazar Square characters */
 /* We do not support C11 <threads.h>.  */
 function h$sendXHR(xhr, d, cont) {
     xhr.addEventListener('error', function () {
