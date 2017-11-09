@@ -16,7 +16,7 @@ document.querySelectorAll(".mikrojs-console").forEach( function(container) {
     var outputarea = container.getElementsByTagName("textarea")[1];
     var button = container.getElementsByTagName("button")[0];
 
-    var editor = CodeMirror.fromTextArea(inputarea, {lineNumbers: true, mode: "mikrokosmos"});
+    var editor = CodeMirror.fromTextArea(inputarea, {lineNumbers: true, mode: "mikrokosmos", matchBrackets: true});
     var outputcode = CodeMirror.fromTextArea(outputarea, {lineNumbers: false, mode: "mikrokosmosoutput", readOnly: true});
     
     button.onclick = function () {
