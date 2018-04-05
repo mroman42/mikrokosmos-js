@@ -39,8 +39,8 @@ pre {
 </style>
 ~~~
 
-The `mikrokosmos` JS function will be then available.
-Then, you can write Mikrokosmos code pads on your document as
+The `mikrokosmos` JS function will be available then.
+You can write Mikrokosmos code pads on your document as
 
 ~~~ html
 <div class="mikrojs-console">
