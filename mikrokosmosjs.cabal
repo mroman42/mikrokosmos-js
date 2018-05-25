@@ -2,7 +2,7 @@ name:                mikrokosmosjs
 version:             0.1.0
 synopsis:            Call Mikrokosmos from JS
 description:         Call Mikrokosmos from JS
-homepage:            https://github.com/m42/mikrokosmos-js
+homepage:            https://github.com/mroman42/mikrokosmos-js
 license:             GPL-3
 license-file:        LICENSE
 author:              Mario Román
@@ -53,4 +53,4 @@ executable mikrojs
   
 source-repository head
   type:     git
-  location: https://github.com/m42/mikrokosmos-js
+  location: https://github.com/mroman42/mikrokosmos-js

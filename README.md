@@ -8,12 +8,12 @@ You need the following code on your header
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/codemirror.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/codemirror.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/addon/mode/simple.min.js"></script>
-<script src="https://m42.github.io/mikrokosmos-js/codemirrormkr.js"></script>
-<script language="javascript" src="https://m42.github.io/mikrokosmos-js/rts.js"></script>
-<script language="javascript" src="https://m42.github.io/mikrokosmos-js/lib.js"></script>
-<script language="javascript" src="https://m42.github.io/mikrokosmos-js/out.js"></script>
-<script language="javascript" src="https://m42.github.io/mikrokosmos-js/runmain.js"></script>
-<script language="javascript" src="https://m42.github.io/mikrokosmos-js/mikrobox.js" defer></script>
+<script src="https://mroman42.github.io/mikrokosmos-js/codemirrormkr.js"></script>
+<script language="javascript" src="https://mroman42.github.io/mikrokosmos-js/rts.js"></script>
+<script language="javascript" src="https://mroman42.github.io/mikrokosmos-js/lib.js"></script>
+<script language="javascript" src="https://mroman42.github.io/mikrokosmos-js/out.js"></script>
+<script language="javascript" src="https://mroman42.github.io/mikrokosmos-js/runmain.js"></script>
+<script language="javascript" src="https://mroman42.github.io/mikrokosmos-js/mikrobox.js" defer></script>
 ~~~
 
 and, optionally, the following `css`
